@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="myForm">
+      <div class="inputs">
+          <div class="input-control">
+          <label for="day">DAY</label>
+          <input type="number" id="day" name="day" placeholder="DD">
+          <span id="day-error" class="error-msg"></span>
+          </div>
+          <div class="input-control">
+            <label for="month">MONTH</label>
+            <input type="number" id="month" name="month" placeholder="MM">
+            <span id="month-error" class="error-msg"></span>
+          </div>
+          <div class="input-control">
+            <label for="year">YEAR</label>
+            <input type="number" id="year" name="year" placeholder="YYYY">
+            <span id="year-error" class="error-msg"></span>
+          </div>
+      </div>
+      <div class="results-arrow">
+        <button type="submit"></button>
+     </div>
+        </form>
+        
+      
+        <div class="results-container">
+          <h1><span id="ageYear">--</span> years</h1>
+          <h1><span id="ageMonth">--</span> months</h1>
+          <h1><span id="ageDay">--</span> days</h1>
+        </div>
+    </div>
+    <script defer src="./index.js"></script>
+  </body>
+</html>

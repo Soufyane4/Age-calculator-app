@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    color: #141414;
+}
+
+body {
+    background-color: #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    background-color: #fff;
+    width: 300px;
+    height: auto;
+    padding: 30px 25px;
+    border-radius: 20px 20px 90px 20px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+}
+
+label {
+    color: #5e5b5b;
+    font-size: .3rem;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 75px;
+    height: 48px;
+    margin: 4px 0 48px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    outline: none;
+    color: #141414;
+    font-weight: 800;
+    font-size: .5rem;
+    padding-left: 10px;
+}
+
+input:focus{
+    border-color: #854dff;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+.results-arrow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+} 
+
+button {
+    background-color: #854dff;
+    background-image: url(./assets/images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    margin-top: -30px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #141414;
+}
+
+h1{
+    font-style: italic;
+    font-weight: 800;
+    display: flex;
+    font-size: 1.3rem;
+}
+
+h1 span {
+    color: #854dff;
+}
+
+.error-msg {
+    font-size: .25rem;
+    color: #ff5757;
+    margin: -48px 0 48px;
+    font-style: italic;
+}
+
+
+@media (min-width: 576px) {
+
+    .container {
+        width: 490px;
+    }
+
+    .inputs {
+        justify-content: start;
+    }
+
+    input {
+        width: 94px;
+        height: 38px;
+        margin: 4px 0 20px;
+    }
+
+    .results-container {
+        margin-top: 0;
+    }
+
+    .results-arrow {
+        justify-content: end;
+        margin-bottom: 0;
+    }
+
+    h1{
+        font-size: 1.7rem;
+        margin: -15px 5px;
+    }
+    
+    .error-msg {
+        margin: -18px 0 24px;
+    }
+}
